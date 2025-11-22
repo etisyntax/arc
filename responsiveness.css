@@ -1,0 +1,130 @@
+
+
+@media (max-width: 900px) {
+
+  body {
+    flex-direction: column !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Universal Sidebar Fix */
+  .sidebar, nav.sidebar, #sidebar {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding-top: 15px !important;
+  }
+
+  .sidebar ul, nav.sidebar ul, #sidebar ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .sidebar li, nav.sidebar li, #sidebar li {
+    padding: 10px !important;
+    border-left: none !important;
+  }
+
+  /* Header Fix */
+  .header, #header, header {
+    left: 0 !important;
+    width: 100% !important;
+    padding: 10px !important;
+    position: relative !important;
+  }
+
+  .search-bar input,
+  .search-box input,
+  input.search {
+    width: 150px !important;
+  }
+
+  /* Main Content Auto Fix */
+  .main-content,
+  #main-content,
+  .content,
+  .page-container {
+    margin: 0 !important;
+    padding: 10px !important;
+    width: 100% !important;
+  }
+
+  /* Grid / Cards Fix */
+  .cards,
+  .grid,
+  .card-container {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+    gap: 15px !important;
+  }
+
+  .card {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  /* Two-column layouts */
+  .two-columns,
+  .columns,
+  .row {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  /* Join Session / Media Player */
+  .session-container,
+  .media-container,
+  .video-box,
+  .player {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  iframe,
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Quizzes */
+  .quiz-container,
+  .question-box {
+    width: 100% !important;
+  }
+
+  /* Reports */
+  .report-table,
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
+
+  /* Settings panel */
+  .settings-panel {
+    width: 100% !important;
+    right: -100% !important;
+  }
+
+  .settings-panel.active {
+    right: 0 !important;
+  }
+}
+
+/* Super Small Screens (Phones under 480px) */
+@media (max-width: 480px) {
+
+  .search-bar input {
+    width: 120px !important;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.1em !important;
+  }
+
+  .card {
+    font-size: 1em !important;
+  }
+}
